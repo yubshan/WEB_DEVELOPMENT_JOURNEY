@@ -1,13 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     margin: 24px;
@@ -19,9 +19,10 @@
     border-radius: 13px;
     box-shadow: 2px 2px 5px rgb(185, 181, 181);
     position: relative;
-    top : 0px
+    top: 0px
 }
-.spanWrapper{
+
+.spanWrapper {
     margin-top: 10px;
     padding: 5px;
     display: flex;
@@ -29,40 +30,45 @@
     flex-wrap: wrap;
     gap: 10px;
 }
-span{
+
+span {
     padding: 4px;
     border: 1px solid black;
     border-radius: 40px;
     border-style: none;
-    box-shadow: 2px 2px  5px  rgb(185, 181, 181);
-     
+    box-shadow: 2px 2px 5px rgb(185, 181, 181);
+
     align-self: flex-start;
 }
-img{
-  width: 99%;
-  height: 50%;
-  margin-top: 10px;
-  border-radius: 10px;
-  align-self: center;
+
+img {
+    width: 99%;
+    height: 50%;
+    margin-top: 10px;
+    border-radius: 10px;
+    align-self: center;
 }
-h1{
- font-family: "Roboto", sans-serif;
- padding: 10px;
- margin-top: 5px;
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    margin-top: 5px;
 }
-p{
+
+p {
     font-family: "Poppins", sans-serif;
     padding: 5px;
-    
+
 }
-button{
+
+button {
     border-radius: 40px;
     border-style: none;
     width: 30%;
     height: 30px;
     align-self: center;
     color: rgb(51, 51, 210);
-    background-color:rgba(122, 126, 229, 0.742) ;
-    font-family:  "Poppins", sans-serif;
+    background-color: rgba(122, 126, 229, 0.742);
+    font-family: "Poppins", sans-serif;
     font-weight: bolder;
 }
