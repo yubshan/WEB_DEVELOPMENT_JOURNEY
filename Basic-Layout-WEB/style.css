@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 241, 232);
+}
+.top *{
+    background-color:white;
+    font-family: "Poppins",sans-serif;
+}
+.top {
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70vw;
+    align-content: space-around;
+    margin-top: 0px;
+    height: 7vh;
+    padding-left: 10px;
+    background-color:white;
+    font-family: "Poppins",sans-serif;
+    border: 2px solid black;
+    border-style: none;
+    box-shadow: 2px 2px 2px rgb(211, 192, 192);
+    position: sticky;
+}
+
+ .top img{
+  margin-top: auto;
+  width: 80px;
+  height: 6vh;
+}
+.top ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-weight: 600;
+
+}
+    li a{
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover {
+  color: rgb(27, 26, 26);
+  background-color: rgb(215, 108, 181) ;
+
+}
+
+
+.sections{
+    height: 65vh;
+    background-color: rgb(240 234 177);
+    display: flex;
+    gap: 10%;
+}
+.firstSection{
+  margin: 20px 0px  20px 150px;
+  border: 1px solid black;
+  border-style: none;
+  box-shadow: 2px 2px 5px #3f49227a;
+  background-color: #d0e3957a;
+  width: 35%;
+}
+.secondSection{
+  margin: 20px 30px  20px 0px;
+  border: 1px solid black;
+  border-style: none;
+  box-shadow: 2px 2px 5px #3f49227a;
+  background-color: #d0e3957a;
+  width: 35%;
+}
+.content *{
+    background-color: #d0e3957a;
+}
+.content{
+    background-color: #d0e3957a;
+    height: 30vh;
+    border: 1px solid #3f49227a;
+    border-radius: 7px;
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.content h1{
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight:700; 
+}
+.content p{
+    padding: 5px;
+    font-family: "Poppin", sans-serif;
+    font-weight:500; 
+}
+
+footer{
+    position:fixed;
+    bottom: 0px;
+    left: 95%;
+
+}
+ footer a img{
+  margin-top: 10px;
+  width: 30px;
+}
