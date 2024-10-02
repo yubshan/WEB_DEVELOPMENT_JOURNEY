@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+ 
+</head>
+<body>
+    <div class="main">
+        <div class="container" >
+            <div class="right">
+                <img src="image.png" alt="thumbnail">
+                <span>8.30</span>
+            </div>
+            <div class="left">
+                <h1>TITLE Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reprehenderit </h1>
+                <div class="content">
+                    <p>Yubshan shrestha</p>
+                    <span class="dot"></span>
+                    <div class="inline-span">
+
+                            <span> 27K</span>
+                            <span class="dot"></span>
+                            <span>2 months ago</span>
+                    </div>
+                         
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+    </div>
+    <script src="script.js">
+    let container = document.createElement("div");
+    let div1= document.createElement("div");
+    let div2= document.createElement("div");
+
+    container.setAttribute("class" , "container");
+    document.querySelector(".main").append(container);
+    container.appendChild(div1);
+    container.appendChild(div2);
+    </script>
+</body>
+</html>
