@@ -6,7 +6,14 @@ function toconvert(num) {
             return (num / 1000000) + 'M';
         }
         return (num / 1000000).toFixed(1) + 'M';
-    } else if (num >= 1000) {
+    } 
+    else if (num >= 100000000){
+        if (num % 100000000== 0) {
+            return (num / 100000000) + 'B';
+        }
+        return (num / 10000000).toFixed(1) + 'B';
+        
+    }else if (num >= 1000) {
         if (num % 1000 == 0) {
             return (num / 1000) + 'k';
         }
@@ -76,11 +83,11 @@ function CreateCard(title, cName, views, monthsold, duration, thumbnail) {
 }
 
 // Create cards
-CreateCard("Hey! This is my first video", "Yubshan Shrestha", 27000, 2, 8.10, "image.png");
-CreateCard("Hey! This is my second video", "Yubshan Shrestha", 25464, 2, 8.10, "image.png");
-CreateCard("Hey! This is my third video", "Yubshan Shrestha", 25464, 4, 8.10, "image.png");
-CreateCard("Hey! This is my fourth video", "Yubshan Shrestha", 25464, 5, 8.10, "image.png");
-CreateCard("Hey! This is my fifth video", "Yubshan Shrestha", 1254640, 6, 8.10, "image.png");
+CreateCard("Hey! This is my first video", "Yubshan Shrestha", 2700000, 2, 8.10, "image.png");
+CreateCard("Hey! This is my second video", "Yubshan Shrestha", 27000000, 2, 8.10, "image.png");
+CreateCard("Hey! This is my third video", "Yubshan Shrestha", 50000000000, 4, 8.10, "image.png");
+CreateCard("Hey! This is my fourth video", "Yubshan Shrestha", 347189071, 5, 8.10, "image.png");
+CreateCard("Hey! This is my fifth video", "Yubshan Shrestha", 2394723864, 6, 8.10, "image.png");
 document.querySelector(".container").addEventListener("click", ()=>{
     window.location.href="https://www.youtube.com";
 })
