@@ -1,6 +1,5 @@
-import {cart} from "../data/cart.js";
+import {cart, cartQuantityUpdate} from "../data/cart.js";
 import { products } from "../data/products.js";
-import { cartQuantityUpdate } from "../data/cart.js";
 
 
 let productsListForHTML ='';
@@ -23,7 +22,7 @@ products.forEach((product)=>{
                 <div class="product-price">$${(product.priceCents /100).toFixed(2)}
                 </div>
                 <div class="product-quantity-container">
-                    <select class="js-select">
+                    <select class="js-select-${product.id}">
                       <option selected="" value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -47,10 +46,12 @@ products.forEach((product)=>{
    `
 })
 document.querySelector(".product-grid").innerHTML = productsListForHTML;
+document.querySelector(".card-quantity").innerHTML= cartQuantityUpdate();
+
 
 // add-to-cart-button update function 
 function addToCart(productId) {
-    let selectElement = document.querySelector(".js-select");
+    let selectElement = document.querySelector(`.js-select-${productId}`);
     
     let matchItem;
     cart.forEach((item)=>{
@@ -65,21 +66,27 @@ function addToCart(productId) {
     
 };
 
+// card-added-update when add-to-cart button clicked
 let timeoutId ;
+function cardContainerUpdate(productId){
+    if(timeoutId){
+        clearTimeout(timeoutId);
+    }
+    document.querySelector(`.js-added-to-cart-${productId}`).classList.add("onclick-animation");
+    timeoutId= setTimeout(() => {
+        document.querySelector(`.js-added-to-cart-${productId}`).classList.remove("onclick-animation");
+        
+    }, 1000);
+}
+
 // add-to-cart-button update and card quantity in nav update
 document.querySelectorAll(".js-container-button")
 .forEach((button)=>{
     button.addEventListener("click", ()=>{
-        if(timeoutId){
-            clearTimeout(timeoutId);
-        }
         const productId = button.dataset.productId;
-        document.querySelector(`.js-added-to-cart-${productId}`).classList.add("onclick-animation");
-        timeoutId= setTimeout(() => {
-            document.querySelector(`.js-added-to-cart-${productId}`).classList.remove("onclick-animation");
-            
-        }, 5000);
         addToCart(productId);
-        cartQuantityUpdate();
+        cardContainerUpdate(productId);
+        
+        document.querySelector(".card-quantity").innerHTML = cartQuantityUpdate();
     });
 });

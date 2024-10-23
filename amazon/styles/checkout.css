@@ -1,0 +1,189 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.checkout-header{
+    height: 60px;
+    padding: 0px 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+   
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1130px;
+    width: 100%;
+}
+.checkout-left-header {
+    width: 150px;
+}
+.amazon-logo {
+    width: 100px;
+    margin-top: 12px;
+}
+
+
+.checkout-middle-header{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 590;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.return-to-home-link {
+    color: rgb(0, 113, 133);
+    font-size: 23px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.checkout-right-header {
+    text-align: right;
+    width: 150px;
+}
+
+.main{
+    padding: 0px 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1130px;
+    /* justify-content: center; */
+}
+.page-title {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+.checkout-grid{
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    column-gap: 12px;
+    align-items: start;
+}
+.cart-item-container{
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 4px;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+.delivery-date{
+    color: rgb(0, 118, 0);
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 22px;
+}
+.cart-item-details-grid{
+    display: grid;
+    grid-template-columns: 100px  1fr 1fr;
+    column-gap: 25px;
+}
+.product-image{
+    width: 100%;
+    height: 120px;
+}
+
+.product-name {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.product-price {
+    color: rgb(177, 39, 4);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.product-quantity .link-primary {
+    margin-left: 3px;
+}
+.link-primary {
+    color: rgb(1, 124, 182);
+    cursor: pointer;
+}
+
+.delivery-options-title{
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.delivery-option {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.delivery-option-input{
+    cursor: pointer;
+    width: 20px;
+}
+.delivery-option-date{
+    color: rgb(0, 118, 0);
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.delivery-option-price {
+    color: rgb(120, 120, 120);
+    font-size: 15px;
+}
+
+
+
+
+.payment-summary{
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 4px;
+    padding: 18px;
+}
+.payment-summary-title{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.payment-summary-row{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.payment-summary-money{
+  text-align: right;
+}
+
+.total-row{
+    color: rgb(177, 39, 4);
+    padding: 18px 0px 10px 0px;
+    font-size: 18px;
+    font-weight: 700;
+    border-top: 1px solid rgb(222, 222, 222);
+}
+
+.place-order-button{
+    width: 100%;
+    padding: 12px;
+    border-radius: 9px;
+    margin-top: 12px;
+}
+
+.link-primary:hover {
+    color: rgb(196, 80, 0);
+  }
+  .value{
+    width: 30px;
+    /* border: none; */
+    border-radius: 3px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .value{
+            width: 30px;
+            /* border: none; */
+            border-radius: 3px;
+        }
+        .link-primary {
+    color: rgb(1, 124, 182);
+    cursor: pointer;
+}
+
+        .link-primary:hover {
+    color: rgb(196, 80, 0);
+  }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="value">
+    <span class="update-quantity-link link-primary btn">
+        ave
+      </span>
+    <script>
+        let display = document.querySelector(".value");
+        let button = document.querySelector(".btn");
+        button.addEventListener("click" , () =>{
+            if(display.value){
+                console.log(display.value);
+                console.log(typeof(Number(display.value)));
+            }
+        })
+    </script>
+</body>
+</html>
